@@ -27,3 +27,5 @@ for item in seq:
 for i,element in enumerate(seq):
     print(i,element)
 
+
+
