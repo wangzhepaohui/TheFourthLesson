@@ -43,7 +43,11 @@ def view_the_log() ->str:
             contents.append([])
             for item in line.split('|'):
                 contents[-1].append(escape(item))
-    return str(contents)
+    title = ('From Data','Remote_addr','User_agent','Results')
+    return render_template('viewlog.html',
+                           the_title='View log',
+                           the_row_titles = title,
+                           the_data = contents)
 
 
 
