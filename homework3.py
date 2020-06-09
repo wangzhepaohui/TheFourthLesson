@@ -1,5 +1,4 @@
 import os
-import posixpath
 
 path = input("Please input the folder path:")
 
